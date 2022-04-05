@@ -1,0 +1,12 @@
+{
+    "action": "random",
+    "mode": "all",
+    "patterns": [
+        "*.servicebus.windows.net"
+    ],
+    "selector": {
+        "namespaces": [
+            "contactsapp"
+        ]
+    }
+}
