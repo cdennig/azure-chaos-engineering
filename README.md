@@ -69,8 +69,8 @@ To run the experiments, go to the Azure Chaos Studio, select one experiment and 
 
 ## Simulate User Load
 
-To simulate users hitting the application, you can use the Azure Load Testing service. Included in this repo, you can find a JMeter file that can be used in the Azure Load Testing service. Simply adjust the BASE_URL parameter for the application endpoint (you will get the value after the terraform script has finished, something like `20-34-132-155.nip.io`).
+To simulate users using the application, you can leverage the Azure Load Testing service. Included in this repo, you can find a JMeter file (folder `jmeter`) that can be used in the Azure Load Testing service. Simply create a test, upload the JMeter file and adjust the BASE_URL parameter for the application endpoint (you will get the value after the terraform script has finished, something like `20-34-132-155.nip.io`).
 
 ## Known Issues
 
-Azure Chaos Studio experiments and targets aren't supported in terraform yet. The corresponding resources are created via an inline ARM template, see the script in module `chaos`. Tearing down the environment sometimes doesn't fully work, so it could be that you need to clean-up resources manually.
+Azure Chaos Studio experiments and targets aren't supported in terraform yet. The corresponding resources are created via an inline ARM template, see the script in module `chaos`. Tearing down the environment sometimes doesn't fully work, so it could be that you need to clean-up resources manually (welcome to terraform 😘).
